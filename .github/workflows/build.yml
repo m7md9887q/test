@@ -207,11 +207,12 @@ jobs:
         flutter config --no-analytics
         flutter build apk --verbose --build-number=$BUILD_NUMBER
 
+
     - name: Upload APK Artifact
       uses: actions/upload-artifact@v4.3.4
       with:
         name: apk-build-artifact
-        path: build/apk
+        path: build/app/outputs/flutter-apk/*.apk
         if-no-files-found: warn
         overwrite: false
 
