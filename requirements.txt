@@ -1,3 +1,2 @@
 kivy
 yt_dlp
-threading
